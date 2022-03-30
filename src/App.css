@@ -28,6 +28,14 @@ body{
     position: relative;
 }
 
+.titleStyle{
+    margin-bottom: 10%;
+    font-size: 50px;
+    font-family:cursive;
+    border: 1px solid #00ABA9;
+    border-radius: 10px;
+}
+
 .stopwatch{
     padding: 60px 0px;
     text-align: center;
@@ -45,3 +53,70 @@ body{
     border-radius: 5px;
     width: 70px;
 } 
+
+.stopwatch .stopwatch-btn{
+    background-color: #fff;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+    transition: background 1s;
+    cursor: pointer;
+}
+
+.stopwatch .stopwatch-btn-red{
+    border: 2px solid #C85454;
+    color: #C85454;
+}
+
+.stopwatch .stopwatch-btn-yel{
+    border: 2px solid #FFC900;
+    color: #FFC900;
+}
+
+.stopwatch .stopwatch-btn-gre{
+    border: 2px solid #00ABA9;
+    color: #00ABA9;
+}
+
+.stopwatch .stopwatch-btn-red:hover{
+    background: #C85454;
+    border: 2px solid #C85454;
+    color: #fff;
+}
+
+.stopwatch .stopwatch-btn-yel:hover{
+    background: #FFC900;
+    border: 2px solid #FFC900;
+    color: #fff;
+}
+
+.stopwatch .stopwatch-btn-gre:hover{
+    background: #00ABA9;
+    border: 2px solid #00ABA9;
+    color: #fff;
+}
+
+@media(max-width:400px){
+
+    body{
+        background-color: rgb(231, 250, 237);
+    }
+    
+    .spanArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .stopwatch span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
+}
